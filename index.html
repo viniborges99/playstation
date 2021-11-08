@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,100; 1,400 & display = swap');
+    </style>
+</head>
+<body>
+    <div class="caixaprincipal"><!--primeira caixa-->
+        <div class="segundacaixa"><!--segunda caixa-->
+            <img class="logo" src="imagens/logo.png" alt="logo da playstation">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li">
+                        <a class="nav-link">Console</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-link">Acessorios</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-link">Controles</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-link">Outros</a>
+                    </li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="imagens/menu.png" alt="menu" onclick="showmenu()">
+        </div><!--fim da segunda caixa-->
+
+        <div class="row"><!--terceira caixa-->
+            <div class="coluna1"><!--terceira caixa0.1 esquerdo-->
+                <h2>PS5 Dualshock</h2>
+                <h3>Wireless Controller for Playstation </h3>
+                <p>Controle Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="botaodecomprar">Comprar agora <img src="imagens/arrow.png" alt="seta"></button>
+            </div><!--fim da terceira caixa0.1-->
+
+            <div class="coluna2"><!--terceira caixa 0.2 direito-->
+                <img class="controle" src="imagens/controller.png" alt="controle">
+                <div class="color-box"></div><!--caixa sem nada apenas para deixar mais bonito com css-->
+                <button>
+                    <img src="imagens/add.png" alt="adicionar ao carrinho">
+                </button>
+            </div>
+        </div><!--fim da terceira caixa0.2-->
+
+        <div class="social-link">
+            <img src="imagens/fb.png" alt="facebook">
+            <img src="imagens/ig.png" alt="instagran">
+            <img src="imagens/tw.png" alt="twitter">
+        </div>
+
+    </div><!--fim da primeira caixa-->
+</body>
+
+<script>
+    const menulist = document.getElementById("menu-list")
+    menulist.style.maxHeight = "0px"
+    
+    function showmenu(){
+        if(menulist.style.maxHeight=="0px"){
+            menulist.style.maxHeight="120px"
+        } else{
+            menulist.style.maxHeight="0px"
+        }
+        
+    }
+</script>
+</html>
